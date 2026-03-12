@@ -1,0 +1,34 @@
+{
+	"name": "@hexa-web/quality",
+	"version": "1.0.0",
+	"description": "Shared ESLint, Prettier, TypeScript and lint-staged configs for Hexa Web projects",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		"./eslint": "./eslint.config.mjs",
+		"./prettier": "./prettier.config.mjs",
+		"./tsconfig": "./tsconfig.json",
+		"./lint-staged": "./lint-staged.config.mjs"
+	},
+	"files": [
+		"eslint.config.mjs",
+		"prettier.config.mjs",
+		"tsconfig.json",
+		"lint-staged.config.mjs",
+		".prettierignore"
+	],
+	"dependencies": {
+		"eslint-config-next": "^16.0.7",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-perfectionist": "^5.4.0",
+		"eslint-plugin-prettier": "^5.5.5",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-unused-imports": "^4.3.0",
+		"prettier": "^3.7.4",
+		"prettier-plugin-tailwindcss": "^0.7.2"
+	},
+	"peerDependencies": {
+		"eslint": "^9",
+		"typescript": "^5"
+	}
+}
